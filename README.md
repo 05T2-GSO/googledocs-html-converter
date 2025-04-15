@@ -6,7 +6,7 @@ This project provides Proof-Of-Concept (POC) tools to convert Google Docs into H
 
 ```bash
 # Clone the repository
-$ git clone https://github.com/your-username/googledocs-html-converter.git
+$ git clone https://github.com/05T2-GSO/googledocs-html-converter.git
 
 # Navigate to the project directory
 $ cd googledocs-html-converter
