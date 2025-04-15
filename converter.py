@@ -7,6 +7,7 @@ from docx.text.run import Run
 from urllib.parse import urlparse
 from docx.shared import Pt
 from docx.enum.text import WD_ALIGN_PARAGRAPH
+import sys
 
 
 TEMPLATE_FILE = "template.html"
@@ -167,5 +168,25 @@ def process_google_doc(link):
 
 # Example run
 if __name__ == "__main__":
-    example_link = input("Paste your Google Docs share link: ").strip()
+    args = sys.argv[1:]
+    
+    if len(args) < 1:
+        example_link = input("Paste your Google Docs share link: ").strip()
+    else:
+        example_link = args[0]
+    
+    if not example_link:
+        print("Error: No input link provided.")
+        sys.exit(1)
+    
+    template_file = "default.html"
+    if len(args) > 1:
+        template_file = args[1]
+    
+    template_path = Path("templates") / template_file
+    if not template_path.exists():
+        print(f"Error: Template file '{template_file}' not found in 'templates' directory.")
+        sys.exit(1)
+    
+    TEMPLATE_FILE = str(template_path)
     process_google_doc(example_link)

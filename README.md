@@ -14,7 +14,7 @@ $ cd googledocs-html-converter
 # Run the converter script
 $ python converter.py 
 or 
-$ python converter.py --input_link "google_drive_share_link"
+$ python converter.py <google_drive_share_link> <template_file>
 ```
 
 ## How to Copy a Public Google Docs Link
