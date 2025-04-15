@@ -32,19 +32,15 @@ This tool uses predefined templates to structure the HTML output. The process in
 
 ### Template Utilization
 
-The conversion process relies on a default template located in the `templates/` directory. This template defines the structure and styling of the resulting HTML. For example, the default template includes placeholders for headers, paragraphs, and other common document elements.
+The conversion process relies on a default template located in the `templates/default.html` directory. This template defines the structure and styling of the resulting HTML. For example, the default template includes placeholders for headers, paragraphs, and other common document elements.
 
 You can customize the output by modifying the default template or creating a new one. The flexibility of this approach allows you to adapt the tool to various use cases, such as creating reports, presentations, or web-ready documents.
 
 #### Example Template
 
 Below is an example of a simple HTML template used for conversion:
-
-#### Example Template
-
-Below is an example of a simple HTML template used for conversion:
 <details>
-<summary>HTML Template</summary>
+<summary>HTML Template - (Click to Expand)</summary>
 
 ```html
 <!DOCTYPE html>
@@ -137,14 +133,8 @@ This template can be found in the repository under [`templates/default.html`](te
 
 By editing or replacing this template, you can control the appearance and structure of the HTML output to suit your needs.
 
-## Adaptability
-
-This project is designed to be easily extended:
-- **Other Structures**: Add new templates in the `templates/` directory.
-- **Styling**: Modify or add CSS files in the `styles/` directory.
-
 ## Examples
-### Example: Google Doc to HTML Conversion
+### Google Doc to HTML Conversion
 
 Below is an example of how a portion of an audition document from Google Docs is converted into HTML. The original Google Doc content is shown on the left, and the resulting HTML output is shown on the right.
 
